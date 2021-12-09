@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Note = ({note}) => {
+const Note = ({ note }) => {
     return (
-        <div>
-            {note.letter}
+        <div className="note-wrapper">
+            <h3 className="note">
+                {note.letter}
+            </h3>
         </div>
     )
 }

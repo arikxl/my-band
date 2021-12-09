@@ -2,7 +2,7 @@ import React from 'react'
 
 const Headline = ({title, color}) => {
     return (
-        <h2 style={{color: color}}>
+        <h2 style={{color: color, textAlign: 'center'}}>
             {title}
         </h2>
     )

@@ -1,6 +1,5 @@
 export const instruments = [
-    { color: 'red',
-    // { color: '#028090',
+    { color: '#028090',
       instrument: "Piano",
       notes:[
   {

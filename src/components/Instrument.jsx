@@ -4,13 +4,13 @@ import Headline from "./Headline";
 import Note from "./Note";
 
 
-const Instruments = ({instrument}) => {
+const Instruments = ({ instrument }) => {
     console.log('instrument:', instrument)
     return (
-        <div>
+        <div  className="instrument">
             <Headline color={instrument.color} title={instrument.instrument} />
             {instrument.notes.map((note, index) => {
-                return <Note key={index} note={note}/>
+                return <div className="note-container"><Note key={index} note={note}/></div>
             })}
         </div>
     )
