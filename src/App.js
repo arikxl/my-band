@@ -2,20 +2,29 @@ import Instrument from "./components/Instrument";
 
 import {instruments} from "./data/keys"
 
-
 function App() {
-  console.log(instruments[0].notes)
+
+  const getRandomColor =() => {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+
   return (
     <div className="App">
-      <h1 style={{color: '#05668d', textAlign: 'center'}}>MY BAND</h1>
+      <h1 style={{color: `${getRandomColor()}`}}>MY BAND</h1>
       {instruments.map((instrument, index) => {
-        return <Instrument key={index}
-                instrument = {instrument}
-        />
-      })
-      }
+        return (
+          <div className="instrument-container flex">
+          <Instrument key={index} color= {getRandomColor()}
+                      instrument = {instrument}/>
+        </div>)
+      })}
     </div>
   );
-}
+};
 
 export default App;

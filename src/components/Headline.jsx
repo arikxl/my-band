@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Headline = ({title, color}) => {
+const Headline = ({ title, color }) => {
     return (
-        <h2 style={{color: color, textAlign: 'center'}}>
+        <h2 style={{ color: color }} className="flex" >
             {title}
         </h2>
     )

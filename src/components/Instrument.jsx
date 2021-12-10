@@ -3,17 +3,18 @@ import React from 'react';
 import Headline from "./Headline";
 import Note from "./Note";
 
-
-const Instruments = ({ instrument }) => {
+const Instruments = ({ instrument, color }) => {
     console.log('instrument:', instrument)
     return (
-        <div  className="instrument">
-            <Headline color={instrument.color} title={instrument.instrument} />
-            {instrument.notes.map((note, index) => {
-                return <div className="note-container"><Note key={index} note={note}/></div>
-            })}
-        </div>
-    )
-}
+        <main>
+            <Headline color={color} title={instrument.instrument} />
+            <div className="instrument flex">
+                {instrument.notes.map((note, index) => {
+                    return <Note key={index} note={note} color={color} />
+                })}
+            </div>
+        </main>
+    );
+};
 
-export default Instruments
+export default Instruments;

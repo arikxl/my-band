@@ -4,30 +4,39 @@
   padding: 0;
 }
 
-.instrument{
+.flex {
   display: flex;
+}
+
+h1{
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+.instrument-container{
+  width: 90%;
+  margin: 3rem auto;
   flex-direction: column;
-  /* justify-content: space-between; */
 }
 
-.note-wrapper{
-  background-color: red;
-  flex-direction: row;
-  display: inline-flex;
-}
-
-.note-container {
-  display: flex;
+.instrument{
   justify-content: space-between;
-  align-items: center;
 }
 
-
+h2 {
+  font-size: 2rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+ 
 .note{
-  background-color: green;
   width: 50px;
   height: 50px;
-  margin-right: 10px;
+  color: white;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
 }
 
 
