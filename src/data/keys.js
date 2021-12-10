@@ -1,136 +1,169 @@
+import notes_A from '../sounds/piano/notes_A.mp3';
+import notes_Ab from '../sounds/piano/notes_Ab.mp3';
+import notes_B from '../sounds/piano/notes_B.mp3';
+import notes_Bb from '../sounds/piano/notes_Bb.mp3';
+import notes_C from '../sounds/piano/notes_C.mp3';
+import notes_D from '../sounds/piano/notes_D.mp3';
+import notes_Db from '../sounds/piano/notes_Db.mp3';
+import notes_E from '../sounds/piano/notes_E.mp3';
+import notes_Eb from '../sounds/piano/notes_Eb.mp3';
+import notes_F from '../sounds/piano/notes_F.mp3';
+import notes_G from '../sounds/piano/notes_G.mp3';
+import notes_Gb from '../sounds/piano/notes_Gb.mp3';
+
+import boom from '../sounds/drums/boom.wav';
+import clap from '../sounds/drums/clap.wav';
+import hihat from '../sounds/drums/hihat.wav';
+import kick from '../sounds/drums/kick.wav';
+import openhat from '../sounds/drums/openhat.wav';
+import ride from '../sounds/drums/ride.wav';
+import snare from '../sounds/drums/snare.wav';
+import tink from '../sounds/drums/tink.wav';
+import tom from '../sounds/drums/tom.wav';
+
+import cool_riff from '../sounds/guitar/cool-riff.wav';
+import distorted_slide from '../sounds/guitar/distorted-slide.wav';
+import guitar_riff from '../sounds/guitar/guitar-riff.wav';
+import happy_chords from '../sounds/guitar/happy-chords.wav';
+import negative_tone from '../sounds/guitar/negative-tone.wav';
+import notification_alert from '../sounds/guitar/notification-alert.wav';
+import quick_tone from '../sounds/guitar/quick-tone.wav';
+import single_note from '../sounds/guitar/single-note.wav';
+import strum from '../sounds/guitar/strum.wav';
+
 export const instruments = [
     { 
-      instrument: "Piano",
+      instrument: "🎹Piano🎹",
       notes:[
   {
-    audio: require('../sounds/piano/notes_A.mp3'),
+    audio: notes_A,
     letter: 'Q'
   },
   {
-    audio: require('../sounds/piano/notes_Ab.mp3'),
+    audio: notes_Ab,
     letter: 'W'
   },
   {
-    audio: require('../sounds/piano/notes_B.mp3'),
+    audio: notes_B,
     letter: 'E'
   },
   {
-    audio: require('../sounds/piano/notes_Bb.mp3'),
+    audio: notes_Bb,
     letter: 'R'
   },
   {
-    audio: require('../sounds/piano/notes_C.mp3'),
+    audio: notes_C,
     letter: 'T'
   },
   {
-    audio: require('../sounds/piano/notes_D.mp3'),
+    audio: notes_D,
     letter: 'Y'
   },
   {
-    audio: require('../sounds/piano/notes_Db.mp3'),
+    audio: notes_Db,
     letter: 'U'
   },
   {
-    audio: require('../sounds/piano/notes_E.mp3'),
+    audio: notes_E,
     letter: 'I'
   },
   {
-    audio: require('../sounds/piano/notes_Eb.mp3'),
+    audio: notes_Eb,
     letter: 'O'
   },
   {
-    audio: require('../sounds/piano/notes_F.mp3'),
+    audio: notes_F,
     letter: 'P'
   },
   {
-    audio: require('../sounds/piano/notes_G.mp3'),
+    audio: notes_G,
     letter: '['
   },
   {
-    audio: require('../sounds/piano/notes_Gb.mp3'),
+    audio: notes_Gb,
     letter: ']'
   },
 ]
 },
   { 
-    instrument: "Drums",
+    instrument: "🥁Drums🥁",
     notes:[
     {
-      audio: require('../sounds/drums/boom.wav'),
+      audio: boom,
       letter: 'A'
     },
     {
-      audio: require('../sounds/drums/clap.wav'),
+      audio: clap,
       letter: 'S'
     },
     {
-      audio: require('../sounds/drums/hihat.wav'),
+      audio: hihat,
       letter: 'D'
     },
     {
-      audio: require('../sounds/drums/kick.wav'),
+      audio: kick,
       letter: 'F'
     },
     {
-      audio: require('../sounds/drums/openhat.wav'),
+      audio: openhat,
       letter: 'G'
     },
     {
-      audio: require('../sounds/drums/ride.wav'),
+      audio: ride,
       letter: 'H'
     },
     {
-      audio: require('../sounds/drums/snare.wav'),
+      audio: snare,
       letter: 'J'
     },
     {
-      audio: require('../sounds/drums/tink.wav'),
+      audio: tink,
       letter: 'K'
     },
     {
-      audio: require('../sounds/drums/tom.wav'),
+      audio: tom,
       letter: 'L'
     }
   ]
   },
   { 
-    instrument: "Guitar",
+    instrument: "🎸Guitar🎸",
     notes:[
     {
-      audio: require('../sounds/guitar/cool-riff.wav'),
+      audio: cool_riff,
       letter: 'Z'
     },
     {
-      audio: require('../sounds/guitar/distorted-slide.wav'),
+      audio: distorted_slide,
       letter: 'X'
     },
     {
-      audio: require('../sounds/guitar/guitar-riff.wav'),
+      audio: guitar_riff,
       letter: 'C'
     },
     {
-      audio: require('../sounds/guitar/happy-chords.wav'),
+      audio: happy_chords,
       letter: 'V'
     },
     {
-      audio: require('../sounds/guitar/negative-tone.wav'),
+      audio: negative_tone,
       letter: 'B'
     },
     {
-      audio: require('../sounds/guitar/notification-alert.wav'),
+      audio: notification_alert,
       letter: 'N'
     },
     {
-      audio: require('../sounds/guitar/quick-tone.wav'),
+      audio: quick_tone,
       letter: 'M'
     },
     {
-      audio: require('../sounds/guitar/single-note.wav'),
-      letter: '<'
+      audio: single_note,
+      letter: ','
     },
     {
-      audio: require('../sounds/guitar/single-note.wav'),
-      letter: '>'
+      audio: strum,
+      letter: '.'
     }
   ]
   },

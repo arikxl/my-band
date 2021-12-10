@@ -4,7 +4,6 @@ import Headline from "./Headline";
 import Note from "./Note";
 
 const Instruments = ({ instrument, color }) => {
-    console.log('instrument:', instrument)
     return (
         <main>
             <Headline color={color} title={instrument.instrument} />
